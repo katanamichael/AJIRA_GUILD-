@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Ajira Guild — Home{% endblock %}
+{% block content %}
+<div class="row justify-content-center align-items-center" style="min-height: 60vh;">
+	<div class="col-md-8 text-center">
+		<h1 class="display-4 fw-bold mb-3">Ajira Guild</h1>
+		<p class="lead mb-4">Connecting job seekers, employers, and training providers in one powerful platform.</p>
+		<div class="d-grid gap-2 d-md-flex justify-content-md-center mb-4">
+			<a href="{% url 'jobs:list' %}" class="btn btn-primary btn-lg px-4 me-md-2">Browse Jobs</a>
+			<a href="{% url 'register' %}" class="btn btn-outline-success btn-lg px-4">Register</a>
+			<a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg px-4">Login</a>
+		</div>
+		<div class="row mt-5">
+			<div class="col-md-4 mb-3">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title text-primary">For Job Seekers</h5>
+						<p class="card-text">Find jobs, apply easily, and track your applications. Get notified about new opportunities and training.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-3">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title text-success">For Employers</h5>
+						<p class="card-text">Post jobs, review applications, and connect with top talent. Manage your postings and get instant notifications.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 mb-3">
+				<div class="card h-100 shadow-sm">
+					<div class="card-body">
+						<h5 class="card-title text-info">For Trainers</h5>
+						<p class="card-text">Offer training programs, reach job seekers, and help bridge the skills gap. Empower the workforce of tomorrow.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

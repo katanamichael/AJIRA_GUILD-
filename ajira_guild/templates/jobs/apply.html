@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Apply for Job — Ajira Guild{% endblock %}
+{% block content %}
+<h2>Apply for {{ job.title }}</h2>
+<form method="post" enctype="multipart/form-data" class="card p-4 mt-3 mb-3">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-success">Submit Application</button>
+</form>
+<a href="{% url 'list' %}" class="btn btn-link">Back to Job Board</a>
+{% endblock %}

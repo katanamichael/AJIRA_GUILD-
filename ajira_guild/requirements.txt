@@ -1,0 +1,9 @@
+Django
+djangorestframework
+mysqlclient
+django-crispy-forms
+python-dotenv
+Pillow
+django-filter
+django-model-utils
+django-mysql
